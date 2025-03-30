@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funções</title>
+</head>
+
+<body>
+  <h1>Funções</h1>
+  <script>
+
+    function somar(numero01, numero02) {
+      return numero01 + numero02;
+    }
+
+    function verificarMaioridade(idade) {
+      if (idade >= 18) {
+        return "Maior de idade.";
+      } else {
+        return "Menor de idade.";
+      }
+    }
+
+    console.log("Soma:", somar(10, 15));
+    console.log("17 anos:", verificarMaioridade(17));
+    console.log("25 anos", verificarMaioridade(25));
+
+  </script>
+</body>
+
+</html>

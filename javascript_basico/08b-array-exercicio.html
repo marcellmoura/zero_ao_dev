@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Exercicios</title>
+</head>
+
+<body>
+  <h1>Array Exercicios</h1>
+
+  <script>
+    filmesFavoritos = ["Senhor dos Aneis", "A Mumia", "Interestelar", "Django", "Star Wars"];
+
+    console.log("Primeiro filme da lista", filmesFavoritos[0]);
+    console.log("Ultimo filme da lista:", filmesFavoritos[filmesFavoritos.length - 1]);
+
+    function adicionarFilme(filme) {
+      filmesFavoritos.push(filme);
+
+    }
+
+    adicionarFilme("Gladiador");
+
+    console.log("Lista de filmes atualizada:")
+    for (let i = 0; i < filmesFavoritos.length; i++) {
+      console.log((i + 1) + ". " + filmesFavoritos[i]);
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>

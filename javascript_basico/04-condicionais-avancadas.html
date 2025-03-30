@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condicionais Avancadas</title>
+</head>
+
+<body>
+  <h1>Condicionais Avancadas</h1>
+
+  <script>
+    const anoAtual = 2025;
+    const anoNascimento = 1987;
+    const cidade = "João Pessoa";
+    const temCarteiraMotorista = true;
+
+    let idade = (anoAtual - anoNascimento);
+
+    if (idade < 18) {
+      console.log("Você é menor de idade");
+    } else if (idade >= 18 && idade <= 59) {
+      console.log("Adulto");
+    } else {
+      console.log("Idoso");
+    }
+
+    if (idade >= 18 && temCarteiraMotorista === true) {
+      console.log("Pode Dirigir");
+    } else {
+      console.log("Não pode dirigir");
+    }
+
+    console.log("Você mora em: " + cidade);
+
+  </script>
+
+</body>
+
+</html>

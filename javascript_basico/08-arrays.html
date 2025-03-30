@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays</title>
+</head>
+
+<body>
+  <h1>Arrays</h1>
+
+  <script>
+    let nomes = ["Candice", "Vinicius", "Tonny", "Mayyro", "Miller"];
+
+    console.log("Primeiro amigo:", nomes[0]);
+    console.log("Ultimo amigo:", nomes[4]);
+
+    console.log("Lista de amigos:");
+
+    for (let i = 0; i < nomes.length; i++) {
+      console.log(nomes[i]);
+    }
+
+    function adicionarNome(nome) {
+      nomes.push(nome);
+    }
+
+    adicionarNome("Marcell");
+    console.log("Lista atualizada de amigos", nomes);
+  </script>
+
+</body>
+
+</html>

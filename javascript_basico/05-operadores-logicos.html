@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operadores Logicos</title>
+</head>
+
+<body>
+  <h1>Operadores Logicos</h1>
+
+  <script>
+    const idade = 37;
+    const temCarteiraMotorista = true;
+    const temCarro = true;
+
+    if (idade >= 18 && temCarteiraMotorista && temCarro) {
+      console.log("Você pode dirigir seu próprio carro.");
+    } else if (idade >= 18 && temCarteiraMotorista && !temCarro) {
+      console.log("Você pode dirigir, mas precisará comprar ou alugar um carro.");
+    } else if (idade >= 18 && !temCarteiraMotorista) {
+      console.log("Você precisará tirar uma carteira de motorista para dirigir.");
+    } else {
+      console.log("Você não tem idade para dirigir.")
+    }
+
+  </script>
+
+</body>
+
+</html>
