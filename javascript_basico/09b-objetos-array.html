@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicios Objetos</title>
+</head>
+
+<body>
+  <h1>Exercicios Objetos</h1>
+
+  <script>
+    let garagem = [
+      {
+        marca: "Toyota",
+        modelo: "Hilux",
+        ano: 2021,
+        detalhes: function () {
+          console.log("O carro: " + this.modelo + ", da marca: " + this.marca + ", do ano: " + this.ano)
+        }
+      },
+      {
+        marca: "Honda",
+        modelo: "Civic",
+        ano: 1998,
+        detalhes: function () {
+          console.log("O carro: " + this.modelo + ", da marca: " + this.marca + ", do ano: " + this.ano)
+        }
+      },
+      {
+        marca: "Ford",
+        modelo: "Argo",
+        ano: 2019,
+        detalhes: function () {
+          console.log("O carro: " + this.modelo + ", da marca: " + this.marca + ", do ano: " + this.ano)
+        }
+      }
+    ];
+
+    console.log("Os carros na garagem são: ");
+    for (let i = 0; i < garagem.length; i++) {
+      garagem[i].detalhes();
+    }
+  </script>
+
+</body>
+
+</html>

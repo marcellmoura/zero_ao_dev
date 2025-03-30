@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos</title>
+</head>
+
+<body>
+  <h1>Objetos</h1>
+
+  <script>
+    let livro = {
+      titulo: "O Hobbit",
+      autor: "J.R.R. Tolkien",
+      anoPublicação: 1937,
+      resumo: function () {
+        console.log("O livro: " + this.titulo + " foi escrito por: " + this.autor + " em " + this.anoPublicação + ".")
+      }
+    };
+
+    console.log("Título: ", livro.titulo);
+    console.log("Autor: ", livro.autor);
+    console.log("Ano de publicação: ", livro.anoPublicação);
+
+    livro.resumo();
+
+  </script>
+
+</body>
+
+</html>
